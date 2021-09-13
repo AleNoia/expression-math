@@ -1,0 +1,12 @@
+{
+  "name": "expression-math",
+  "version": "1.0.0",
+  "description": "A Node.Js program that solves any numeric expression given by the user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Igor Noia",
+  "license": "MIT"
+}
