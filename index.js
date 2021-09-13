@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 const expression = String;
 
 // Functions
-// Verificando as caracteres da expressão
+// Verifying expression characters
 function verifyExpression(expression) {
   if (expression.includes("^")) {
     return expression.replace("^", "**");
@@ -22,13 +22,25 @@ function calc(expression) {
   return console.log("The result is ", eval(expression));
 }
 
+// Verifying if the user want to close or not the application
+function closeAplication() {
+  rl.question("Você deseja continuar? [y/n] ", function (value) {
+    if (value == "y") {
+      start();
+    } else {
+      rl.close();
+    }
+  });
+}
+
 // Expression to start the application
 function start() {
   rl.question("Insert the expression math: ", function (expression) {
     try {
       calc(verifyExpression(expression));
+      closeAplication();
     } catch (err) {
-      console.log("An error occurred in the application: ", err);
+      console.error("An error occurred in the application: ", err);
     }
   });
 }
