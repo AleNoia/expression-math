@@ -71,7 +71,7 @@ As tecnologias e linguagens usadas neste projeto:
 ***
 
 # <a name="WhatILearn"></a>🧠 O que eu aprendi 
-Durante o desenvolvimento desse projeto aprendi a ler dados vindo da linha de comando com Node JS. Desenvolvi minha lógica acerca validações.
+Durante o desenvolvimento desse projeto aprendi a ler dados vindo da linha de comando com Node JS. Desenvolvi minha lógica acerca validações, o entendimento e aplicação em problemas de contexto, o conhecimento em lógica de programação e estrutura de dados.
 
 ***
 
