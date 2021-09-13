@@ -8,5 +8,6 @@
     "start": "node index"
   },
   "author": "Igor Noia",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }

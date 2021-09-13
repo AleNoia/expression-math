@@ -9,6 +9,14 @@ const rl = readline.createInterface({
 const expression = String;
 
 // Functions
+// Verificando as caracteres da expressão
+function verifyExpression(expression) {
+  if (expression.includes("^")) {
+    return expression.replace("^", "**");
+  }
+  return expression;
+}
+
 // Calculating the expression sent by the user
 function calc(expression) {
   return console.log("The result is ", eval(expression));
@@ -18,7 +26,7 @@ function calc(expression) {
 function start() {
   rl.question("Insert the expression math: ", function (expression) {
     try {
-      calc(expression);
+      calc(verifyExpression(expression));
     } catch (err) {
       console.log("An error occurred in the application: ", err);
     }
