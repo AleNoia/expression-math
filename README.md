@@ -23,10 +23,7 @@ Programa em Node.Js que resolve qualquer expressão numérica dada pelo usuário
 
 * Resolve operações matemáticas
 * Recebe, via linha de comando, expressões uméricas completas.
-* Verifica se
-  * Há uma divisão por zero
-  * Se foi inserido o caracter "^" e substitui por "**"
-  * Se foi inserido o caracter ":" e substitui por "/"
+* Tratamento de erros
 
 
 ***
